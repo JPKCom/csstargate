@@ -2117,7 +2117,8 @@ var Stargate = function (_HTMLElement) {
           selectors: {
             symboles: '.Stargate-symboles',
             symbole: '.Stargate-symbole',
-            eventHorizon: '.Stargate-horizon'
+            eventHorizon: '.Stargate-horizon',
+            button: '.Stargate-button'
           }
         };
 
@@ -2126,7 +2127,10 @@ var Stargate = function (_HTMLElement) {
           _this2.elements[key] = _this2.querySelectorAll(_this2.options.selectors[key]);
         });
 
-        this.setAttribute('data-address', (0, _stringify2['default'])(this.options.address));
+        // TODO: remove when dhd is ready
+        this.elements.button[0].addEventListener('click', function () {
+          return _this2.setAttribute('data-address', (0, _stringify2['default'])(_this2.options.address));
+        });
       }
 
       return createdCallback;
@@ -2166,6 +2170,7 @@ var Stargate = function (_HTMLElement) {
                     }
 
                     that.rotateTo(that.options.address[i]);
+                    //this.activateHook(i);
                     _context.next = 5;
                     return i++;
 
@@ -2204,15 +2209,15 @@ var Stargate = function (_HTMLElement) {
       function rotateTo(chevron) {
         var _this3 = this;
 
-        var speed = !this.options.isRunning ? 1 : this.options.speed;
+        // const speed = !this.options.isRunning ? 1 : this.options.speed;
         this.options.isRunning = true;
+
+        console.log('Rotating to ' + chevron);
+        this.elements.symboles[0].style.transform = 'rotate(' + 360 / 39 * (chevron - 1) * -1 + 'deg)';
+
         setTimeout(function () {
-          console.log('Rotating to ' + chevron);
-          _this3.elements.symboles[0].style.transform = 'rotate(' + 360 / 39 * (chevron - 1) * -1 + 'deg)';
-          setTimeout(function () {
-            _this3.rotate.next();
-          }, _this3.options.delay);
-        }, speed);
+          return _this3.rotate.next();
+        }, this.options.speed + this.options.delay);
       }
 
       return rotateTo;

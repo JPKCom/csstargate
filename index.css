@@ -386,6 +386,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
+  overflow: hidden;
   background-color: #000; }
 
 body > * {
@@ -995,5 +996,26 @@ body > * {
   height: 66.6vh;
   background-color: #33f;
   border-radius: 50%; }
+
+.Stargate-button {
+  position: fixed;
+  top: 1vh;
+  right: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 5vh;
+  height: 5vh;
+  font-size: 2vh;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #f00; }
 
 /* @import "components/dhd.css"; */
