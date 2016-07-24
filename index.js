@@ -2084,6 +2084,16 @@ var _inherits3 = _interopRequireDefault(_inherits2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
+if (typeof HTMLElement !== 'function') {
+  var oHTMLElement = function () {
+    function oHTMLElement() {}
+
+    return oHTMLElement;
+  }();
+  oHTMLElement.prototype = HTMLElement.prototype;
+  HTMLElement = oHTMLElement;
+}
+
 var Stargate = function (_HTMLElement) {
   (0, _inherits3['default'])(Stargate, _HTMLElement);
 
