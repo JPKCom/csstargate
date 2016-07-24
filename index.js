@@ -1335,10 +1335,10 @@ var Stargate = function (_HTMLElement) {
 
         return {
           next: function () {
-            function next() {
-              if (this.options.currentIndex < this.options.address.length) {
-                this.rotateTo(this.options.address[this.options.currentIndex]);
-                this.options.currentIndex++;
+            function next(that) {
+              if (that.options.currentIndex < that.options.address.length) {
+                that.rotateTo(that.options.address[that.options.currentIndex]);
+                that.increaseIndex();
                 return { done: false };
               }
               return { done: true };
@@ -1352,11 +1352,20 @@ var Stargate = function (_HTMLElement) {
       return rotate;
     }()
   }, {
+    key: 'increaseIndex',
+    value: function () {
+      function increaseIndex() {
+        this.options.currentIndex++;
+      }
+
+      return increaseIndex;
+    }()
+  }, {
     key: 'runGate',
     value: function () {
       function runGate() {
         this.rotate();
-        this.rotate().next();
+        this.rotate().next(this);
       }
 
       return runGate;
@@ -1373,7 +1382,7 @@ var Stargate = function (_HTMLElement) {
         this.elements.symboles[0].style.transform = 'rotate(' + 360 / 39 * (chevron - 1) * -1 + 'deg)';
 
         setTimeout(function () {
-          return _this3.rotate().next();
+          return _this3.rotate().next(_this3);
         }, this.options.speed + this.options.delay);
       }
 
