@@ -2138,7 +2138,7 @@ var Stargate = function (_HTMLElement) {
       function initIteration() {
         var _marked = [rotate].map(_regenerator2['default'].mark);
 
-        this.options.isRunning = this.options.isRunning !== true;
+        this.options.isRunning = this.options.isRunning === true;
 
         function rotate(that) {
           var i;
