@@ -1282,7 +1282,8 @@ var Stargate = function (_HTMLElement) {
             symboles: '.Stargate-symboles',
             symbole: '.Stargate-symbole',
             eventHorizon: '.Stargate-horizon',
-            button: '.Stargate-button'
+            buttonGo: '.Stargate-button--go',
+            buttonStop: '.Stargate-button--stop'
           }
         };
 
@@ -1292,8 +1293,11 @@ var Stargate = function (_HTMLElement) {
         });
 
         // TODO: remove when dhd is ready
-        this.elements.button[0].addEventListener('click', function () {
-          return _this2.setAttribute('data-address', (0, _stringify2['default'])(_this2.options.address));
+        this.elements.buttonGo[0].addEventListener('click', function () {
+          return _this2.setAttribute('data-address', (0, _stringify2['default'])([27, 7, 15, 32, 12, 30, 1]));
+        });
+        this.elements.buttonStop[0].addEventListener('click', function () {
+          return _this2.removeAttribute('data-address');
         });
       }
 
@@ -1303,13 +1307,11 @@ var Stargate = function (_HTMLElement) {
     key: 'attributeChangedCallback',
     value: function () {
       function attributeChangedCallback(name, oldValue, newValue) {
-        console.log('name: ' + name);
-        console.log('oldValue: ' + oldValue);
-        console.log('newValue: ' + newValue);
         if (newValue != null) {
           this.options.address = JSON.parse(newValue);
           this.runGate();
         } else {
+          this.options.address = [];
           this.resetGate();
         }
       }
@@ -1320,9 +1322,10 @@ var Stargate = function (_HTMLElement) {
     key: 'resetGate',
     value: function () {
       function resetGate() {
+        this.elements.symboles[0].removeAttribute('style');
         this.options.currentIndex = 0;
-        this.options.address = [];
-        this.elements.symboles[0].style.transform = null;
+        this.options.isRunning = false;
+        this.setHorizon(false);
       }
 
       return resetGate;
@@ -1331,16 +1334,15 @@ var Stargate = function (_HTMLElement) {
     key: 'rotate',
     value: function () {
       function rotate() {
-        this.options.isRunning = this.options.isRunning === true;
-
         return {
           next: function () {
-            function next(that) {
-              if (that.options.currentIndex < that.options.address.length) {
-                that.rotateTo(that.options.address[that.options.currentIndex]);
+            function next(that, index, address) {
+              if (index < address.length) {
+                that.rotateTo(that.options.address[index]);
                 that.increaseIndex();
                 return { done: false };
               }
+              that.setHorizon(true);
               return { done: true };
             }
 
@@ -1361,11 +1363,24 @@ var Stargate = function (_HTMLElement) {
       return increaseIndex;
     }()
   }, {
+    key: 'setHorizon',
+    value: function () {
+      function setHorizon(state) {
+        if (state === true && this.options.isRunning) {
+          this.elements.eventHorizon[0].classList.add('is-active');
+        } else {
+          this.elements.eventHorizon[0].classList.remove('is-active');
+        }
+      }
+
+      return setHorizon;
+    }()
+  }, {
     key: 'runGate',
     value: function () {
       function runGate() {
-        this.rotate();
-        this.rotate().next(this);
+        this.options.isRunning = true;
+        this.rotate().next(this, this.options.currentIndex, this.options.address);
       }
 
       return runGate;
@@ -1376,13 +1391,11 @@ var Stargate = function (_HTMLElement) {
       function rotateTo(chevron) {
         var _this3 = this;
 
-        this.options.isRunning = true;
-
         console.log('Rotating to ' + chevron);
         this.elements.symboles[0].style.transform = 'rotate(' + 360 / 39 * (chevron - 1) * -1 + 'deg)';
 
         setTimeout(function () {
-          return _this3.rotate().next(_this3);
+          return _this3.rotate().next(_this3, _this3.options.currentIndex, _this3.options.address);
         }, this.options.speed + this.options.delay);
       }
 
