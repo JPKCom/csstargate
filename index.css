@@ -382,6 +382,9 @@ textarea {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
 
+html {
+  font-size: 2vh; }
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
