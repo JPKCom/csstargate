@@ -4852,8 +4852,8 @@ body > * {
   top: .65rem;
   width: 4.23rem;
   height: 3.2rem;
-  -webkit-clip-path: polygon(0% 0%, 25% 0%, 39% 61.5%, 61% 61.5%, 75% 0%, 100% 0%, 68.55% 100%, 31.45% 100%);
-          clip-path: polygon(0% 0%, 25% 0%, 39% 61.5%, 61% 61.5%, 75% 0%, 100% 0%, 68.55% 100%, 31.45% 100%);
+  -webkit-clip-path: polygon(0% 0%, 25% 0%, 39% 68%, 61% 68%, 75% 0%, 100% 0%, 68% 100%, 32% 100%);
+          clip-path: polygon(0% 0%, 25% 0%, 39% 68%, 61% 68%, 75% 0%, 100% 0%, 68% 100%, 32% 100%);
   background: -webkit-linear-gradient(#343434 0%, #343434 0.1875rem, #fc9104 0.1875rem, #fc9104 0.25rem, #343434 0.25rem, #343434 0.4375rem, #fc9104 0.4375rem, #fc9104 0.5rem, #343434 0.5rem, #343434 0.6875rem, #fc9104 0.6875rem, #fc9104 0.75rem, #343434 0.75rem, #343434 0.9375rem, #fc9104 0.9375rem, #fc9104 1rem, #343434 1rem, #343434 1.1875rem, #fc9104 1.1875rem, #fc9104 1.25rem, #343434 1.25rem, #343434 1.4375rem, #fc9104 1.4375rem, #fc9104 1.5rem, #343434 1.5rem);
   background: linear-gradient(#343434 0%, #343434 0.1875rem, #fc9104 0.1875rem, #fc9104 0.25rem, #343434 0.25rem, #343434 0.4375rem, #fc9104 0.4375rem, #fc9104 0.5rem, #343434 0.5rem, #343434 0.6875rem, #fc9104 0.6875rem, #fc9104 0.75rem, #343434 0.75rem, #343434 0.9375rem, #fc9104 0.9375rem, #fc9104 1rem, #343434 1rem, #343434 1.1875rem, #fc9104 1.1875rem, #fc9104 1.25rem, #343434 1.25rem, #343434 1.4375rem, #fc9104 1.4375rem, #fc9104 1.5rem, #343434 1.5rem);
   -webkit-transform: translateX(-50%);
@@ -4862,11 +4862,11 @@ body > * {
     position: absolute;
     bottom: 0;
     left: 50%;
-    width: 1.6rem;
-    height: 0;
-    border-right: .33rem solid transparent;
-    border-bottom: 1.3rem solid #3c3c3c;
-    border-left: .33rem solid transparent;
+    width: 1.525rem;
+    height: 1.025rem;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    background-color: #3c3c3c;
     content: "";
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
