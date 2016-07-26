@@ -1,4 +1,4 @@
-.Stargate-outerRing, .Stargate-engraving, .Stargate-engravingLine, .Stargate-triangle, .Stargate-symbole, .Stargate-screws, .Stargate-innerRing, .Stargate-horizon {
+.Stargate-outerRing, .Stargate-engraving, .Stargate-engravingLine, .Stargate-triangle, .Stargate-symbole, .Stargate-screws, .Stargate-chevron, .Stargate-innerRing, .Stargate-horizon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4229,7 +4229,7 @@ body > * {
   width: 40.316rem;
   height: 40.316rem;
   margin: -20.158rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   border-radius: 50%;
   -webkit-transform: rotate(0);
           transform: rotate(0);
@@ -4270,8 +4270,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(0) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(1) {
   -webkit-transform: rotate(0deg);
@@ -4283,8 +4283,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(1) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(2) {
   -webkit-transform: rotate(9.23077deg);
@@ -4296,8 +4296,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(2) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(3) {
   -webkit-transform: rotate(18.46154deg);
@@ -4309,8 +4309,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(3) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(4) {
   -webkit-transform: rotate(27.69231deg);
@@ -4322,8 +4322,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(4) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(5) {
   -webkit-transform: rotate(36.92308deg);
@@ -4335,8 +4335,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(5) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(6) {
   -webkit-transform: rotate(46.15385deg);
@@ -4348,8 +4348,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(6) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(7) {
   -webkit-transform: rotate(55.38462deg);
@@ -4361,8 +4361,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(7) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(8) {
   -webkit-transform: rotate(64.61538deg);
@@ -4374,8 +4374,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(8) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(9) {
   -webkit-transform: rotate(73.84615deg);
@@ -4387,8 +4387,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(9) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(10) {
   -webkit-transform: rotate(83.07692deg);
@@ -4400,8 +4400,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(10) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(11) {
   -webkit-transform: rotate(92.30769deg);
@@ -4413,8 +4413,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(11) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(12) {
   -webkit-transform: rotate(101.53846deg);
@@ -4426,8 +4426,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(12) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(13) {
   -webkit-transform: rotate(110.76923deg);
@@ -4439,8 +4439,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(13) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(14) {
   -webkit-transform: rotate(120deg);
@@ -4452,8 +4452,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(14) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(15) {
   -webkit-transform: rotate(129.23077deg);
@@ -4465,8 +4465,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(15) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(16) {
   -webkit-transform: rotate(138.46154deg);
@@ -4478,8 +4478,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(16) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(17) {
   -webkit-transform: rotate(147.69231deg);
@@ -4491,8 +4491,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(17) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(18) {
   -webkit-transform: rotate(156.92308deg);
@@ -4504,8 +4504,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(18) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(19) {
   -webkit-transform: rotate(166.15385deg);
@@ -4517,8 +4517,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(19) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(20) {
   -webkit-transform: rotate(175.38462deg);
@@ -4530,8 +4530,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(20) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(21) {
   -webkit-transform: rotate(184.61538deg);
@@ -4543,8 +4543,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(21) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(22) {
   -webkit-transform: rotate(193.84615deg);
@@ -4556,8 +4556,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(22) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(23) {
   -webkit-transform: rotate(203.07692deg);
@@ -4569,8 +4569,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(23) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(24) {
   -webkit-transform: rotate(212.30769deg);
@@ -4582,8 +4582,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(24) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(25) {
   -webkit-transform: rotate(221.53846deg);
@@ -4595,8 +4595,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(25) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(26) {
   -webkit-transform: rotate(230.76923deg);
@@ -4608,8 +4608,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(26) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(27) {
   -webkit-transform: rotate(240deg);
@@ -4621,8 +4621,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(27) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(28) {
   -webkit-transform: rotate(249.23077deg);
@@ -4634,8 +4634,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(28) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(29) {
   -webkit-transform: rotate(258.46154deg);
@@ -4647,8 +4647,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(29) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(30) {
   -webkit-transform: rotate(267.69231deg);
@@ -4660,8 +4660,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(30) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(31) {
   -webkit-transform: rotate(276.92308deg);
@@ -4673,8 +4673,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(31) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(32) {
   -webkit-transform: rotate(286.15385deg);
@@ -4686,8 +4686,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(32) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(33) {
   -webkit-transform: rotate(295.38462deg);
@@ -4699,8 +4699,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(33) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(34) {
   -webkit-transform: rotate(304.61538deg);
@@ -4712,8 +4712,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(34) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(35) {
   -webkit-transform: rotate(313.84615deg);
@@ -4725,8 +4725,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(35) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(36) {
   -webkit-transform: rotate(323.07692deg);
@@ -4738,8 +4738,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(36) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(37) {
   -webkit-transform: rotate(332.30769deg);
@@ -4751,8 +4751,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(37) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(38) {
   -webkit-transform: rotate(341.53846deg);
@@ -4764,8 +4764,8 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(38) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-symbole:nth-child(39) {
   -webkit-transform: rotate(350.76923deg);
@@ -4777,14 +4777,96 @@ body > * {
     -webkit-transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem);
             transform: translateX(-50%) rotate(4.33846deg) translateY(-20.158rem); }
   .Stargate-symbole:nth-child(39) .Stargate-svg {
-    -webkit-transform: translate(-50%, -19.35168rem);
-            transform: translate(-50%, -19.35168rem); }
+    -webkit-transform: translate(-50%, -19.6rem);
+            transform: translate(-50%, -19.6rem); }
 
 .Stargate-screws {
   width: 0.27rem;
   height: 0.27rem;
   border-radius: 50%;
   box-shadow: 4.20305rem -21.62279rem #333, -10.67914rem -19.26569rem #333, -20.56444rem -7.89395rem #333, -20.82741rem 7.17145rem #333, -11.345rem 18.88125rem #333, 3.44586rem 21.7563rem #333, 16.62437rem 14.45134rem #333, 22.02414rem 0.38442rem #333, 17.11853rem -13.86259rem #333, 4.95511rem -21.46294rem #333, -10.00028rem -19.62665rem #333, -20.27642rem -8.60683rem #333, -21.065rem 6.44022rem #333, -11.99704rem 18.47382rem #333, 2.68448rem 21.86331rem #333, 16.10989rem 15.02272rem #333, 21.99731rem 1.15282rem #333, 17.5919rem -13.25668rem #333, 7.17145rem -20.82741rem #333, -7.89395rem -20.56444rem #333, -19.26569rem -10.67914rem #333, -21.62279rem 4.20305rem #333, -13.86235rem 17.11858rem #333, 0.38443rem 22.02415rem #333, 14.45134rem 16.62437rem #333, 21.7563rem 3.44585rem #333, 18.88122rem -11.34513rem #333, 9.30922rem -19.96369rem #333, -5.70114rem -21.27693rem #333, -18.04387rem -12.63445rem #333, -21.94368rem 1.91982rem #333, -15.57579rem 15.57579rem #333, -1.91982rem 21.94368rem #333, 12.63445rem 18.04387rem #333, 21.27693rem 5.70113rem #333, 19.96368rem -9.30931rem #333, 10.34128rem -19.44913rem #333, -4.57977rem -21.54615rem #333, -17.35791rem -13.56148rem #333, -22.01408rem 0.76875rem #333, -16.36962rem 14.73927rem #333, -3.06564rem 21.81313rem #333, 11.6728rem 18.68038rem #333, 20.9494rem 6.80687rem #333, 20.42353rem -8.25171rem #333, 11.01375rem -19.07637rem #333, -3.82504rem -21.69285rem #333, -16.87404rem -14.159rem #333, -22.0275rem 0rem #333, -16.87404rem 14.159rem #333, -3.82504rem 21.69285rem #333, 11.01375rem 19.07637rem #333, 20.69908rem 7.53385rem #333, 20.69907rem -7.53391rem #333; }
+
+.Stargate-chevron {
+  -webkit-transform-origin: top;
+          transform-origin: top; }
+
+.Stargate-chevron:nth-child(0) {
+  -webkit-transform: rotate(-40deg) translateY(-22.75rem);
+          transform: rotate(-40deg) translateY(-22.75rem); }
+
+.Stargate-chevron:nth-child(1) {
+  -webkit-transform: rotate(0deg) translateY(-22.75rem);
+          transform: rotate(0deg) translateY(-22.75rem); }
+
+.Stargate-chevron:nth-child(2) {
+  -webkit-transform: rotate(40deg) translateY(-22.75rem);
+          transform: rotate(40deg) translateY(-22.75rem); }
+
+.Stargate-chevron:nth-child(3) {
+  -webkit-transform: rotate(80deg) translateY(-22.75rem);
+          transform: rotate(80deg) translateY(-22.75rem); }
+
+.Stargate-chevron:nth-child(4) {
+  -webkit-transform: rotate(120deg) translateY(-22.75rem);
+          transform: rotate(120deg) translateY(-22.75rem); }
+
+.Stargate-chevron:nth-child(5) {
+  -webkit-transform: rotate(160deg) translateY(-22.75rem);
+          transform: rotate(160deg) translateY(-22.75rem); }
+
+.Stargate-chevron:nth-child(6) {
+  -webkit-transform: rotate(200deg) translateY(-22.75rem);
+          transform: rotate(200deg) translateY(-22.75rem); }
+
+.Stargate-chevron:nth-child(7) {
+  -webkit-transform: rotate(240deg) translateY(-22.75rem);
+          transform: rotate(240deg) translateY(-22.75rem); }
+
+.Stargate-chevron:nth-child(8) {
+  -webkit-transform: rotate(280deg) translateY(-22.75rem);
+          transform: rotate(280deg) translateY(-22.75rem); }
+
+.Stargate-chevron:nth-child(9) {
+  -webkit-transform: rotate(320deg) translateY(-22.75rem);
+          transform: rotate(320deg) translateY(-22.75rem); }
+
+.Stargate-chevronPlate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15rem;
+  height: 3.8rem;
+  -webkit-clip-path: polygon(0% 0%, 43% 0%, 50% 100%, 57% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 43% 0%, 50% 100%, 57% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background: -webkit-linear-gradient(#383838 0%, #383838 17.15%, transparent 17.15%);
+  background: linear-gradient(#383838 0%, #383838 17.15%, transparent 17.15%);
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.Stargate-chevronHook {
+  position: absolute;
+  top: .65rem;
+  width: 4.23rem;
+  height: 3.2rem;
+  -webkit-clip-path: polygon(0% 0%, 25% 0%, 39% 61.5%, 61% 61.5%, 75% 0%, 100% 0%, 68.55% 100%, 31.45% 100%);
+          clip-path: polygon(0% 0%, 25% 0%, 39% 61.5%, 61% 61.5%, 75% 0%, 100% 0%, 68.55% 100%, 31.45% 100%);
+  background: -webkit-linear-gradient(#343434 0%, #343434 0.1875rem, #fc9104 0.1875rem, #fc9104 0.25rem, #343434 0.25rem, #343434 0.4375rem, #fc9104 0.4375rem, #fc9104 0.5rem, #343434 0.5rem, #343434 0.6875rem, #fc9104 0.6875rem, #fc9104 0.75rem, #343434 0.75rem, #343434 0.9375rem, #fc9104 0.9375rem, #fc9104 1rem, #343434 1rem, #343434 1.1875rem, #fc9104 1.1875rem, #fc9104 1.25rem, #343434 1.25rem, #343434 1.4375rem, #fc9104 1.4375rem, #fc9104 1.5rem, #343434 1.5rem);
+  background: linear-gradient(#343434 0%, #343434 0.1875rem, #fc9104 0.1875rem, #fc9104 0.25rem, #343434 0.25rem, #343434 0.4375rem, #fc9104 0.4375rem, #fc9104 0.5rem, #343434 0.5rem, #343434 0.6875rem, #fc9104 0.6875rem, #fc9104 0.75rem, #343434 0.75rem, #343434 0.9375rem, #fc9104 0.9375rem, #fc9104 1rem, #343434 1rem, #343434 1.1875rem, #fc9104 1.1875rem, #fc9104 1.25rem, #343434 1.25rem, #343434 1.4375rem, #fc9104 1.4375rem, #fc9104 1.5rem, #343434 1.5rem);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+  .Stargate-chevronHook::before {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1.6rem;
+    height: 0;
+    border-right: .33rem solid transparent;
+    border-bottom: 1.3rem solid #3c3c3c;
+    border-left: .33rem solid transparent;
+    content: "";
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
 
 .Stargate-innerRing {
   width: 33.3rem;
