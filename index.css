@@ -4844,18 +4844,22 @@ body > * {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
 
-.Stargate-chevronHook {
+.Stargate-chevronHook, .Stargate-chevronHookActive {
   position: absolute;
   top: .65rem;
   width: 4.23rem;
   height: 3.2rem;
   -webkit-clip-path: polygon(0% 0%, 25% 0%, 39% 68%, 61% 68%, 75% 0%, 100% 0%, 68% 100%, 32% 100%);
           clip-path: polygon(0% 0%, 25% 0%, 39% 68%, 61% 68%, 75% 0%, 100% 0%, 68% 100%, 32% 100%);
-  background: -webkit-linear-gradient(#343434 0%, #343434 0.1875rem, #fc9104 0.1875rem, #fc9104 0.25rem, #343434 0.25rem, #343434 0.4375rem, #fc9104 0.4375rem, #fc9104 0.5rem, #343434 0.5rem, #343434 0.6875rem, #fc9104 0.6875rem, #fc9104 0.75rem, #343434 0.75rem, #343434 0.9375rem, #fc9104 0.9375rem, #fc9104 1rem, #343434 1rem, #343434 1.1875rem, #fc9104 1.1875rem, #fc9104 1.25rem, #343434 1.25rem, #343434 1.4375rem, #fc9104 1.4375rem, #fc9104 1.5rem, #343434 1.5rem);
-  background: linear-gradient(#343434 0%, #343434 0.1875rem, #fc9104 0.1875rem, #fc9104 0.25rem, #343434 0.25rem, #343434 0.4375rem, #fc9104 0.4375rem, #fc9104 0.5rem, #343434 0.5rem, #343434 0.6875rem, #fc9104 0.6875rem, #fc9104 0.75rem, #343434 0.75rem, #343434 0.9375rem, #fc9104 0.9375rem, #fc9104 1rem, #343434 1rem, #343434 1.1875rem, #fc9104 1.1875rem, #fc9104 1.25rem, #343434 1.25rem, #343434 1.4375rem, #fc9104 1.4375rem, #fc9104 1.5rem, #343434 1.5rem);
+  background: -webkit-linear-gradient(#343434 0%, #343434 0.1875rem, #4e423e 0.1875rem, #4e423e 0.25rem, #343434 0.25rem, #343434 0.4375rem, #4e423e 0.4375rem, #4e423e 0.5rem, #343434 0.5rem, #343434 0.6875rem, #4e423e 0.6875rem, #4e423e 0.75rem, #343434 0.75rem, #343434 0.9375rem, #4e423e 0.9375rem, #4e423e 1rem, #343434 1rem, #343434 1.1875rem, #4e423e 1.1875rem, #4e423e 1.25rem, #343434 1.25rem, #343434 1.4375rem, #4e423e 1.4375rem, #4e423e 1.5rem, #343434 1.5rem);
+  background: linear-gradient(#343434 0%, #343434 0.1875rem, #4e423e 0.1875rem, #4e423e 0.25rem, #343434 0.25rem, #343434 0.4375rem, #4e423e 0.4375rem, #4e423e 0.5rem, #343434 0.5rem, #343434 0.6875rem, #4e423e 0.6875rem, #4e423e 0.75rem, #343434 0.75rem, #343434 0.9375rem, #4e423e 0.9375rem, #4e423e 1rem, #343434 1rem, #343434 1.1875rem, #4e423e 1.1875rem, #4e423e 1.25rem, #343434 1.25rem, #343434 1.4375rem, #4e423e 1.4375rem, #4e423e 1.5rem, #343434 1.5rem);
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
-  .Stargate-chevronHook::before {
+          transform: translateX(-50%);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms; }
+  .Stargate-chevronHook::before, .Stargate-chevronHookActive::before {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -4867,6 +4871,62 @@ body > * {
     content: "";
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+  .Stargate-chevron.is-open .Stargate-chevronHook, .Stargate-chevron.is-open .Stargate-chevronHookActive {
+    -webkit-transform: translateX(-50%) translateY(0.5rem);
+            transform: translateX(-50%) translateY(0.5rem); }
+
+.Stargate-chevronHookActive {
+  background: -webkit-linear-gradient(#343434 0%, #343434 0.1875rem, #d98413 0.1875rem, #d98413 0.25rem, #343434 0.25rem, #343434 0.4375rem, #d98413 0.4375rem, #d98413 0.5rem, #343434 0.5rem, #343434 0.6875rem, #d98413 0.6875rem, #d98413 0.75rem, #343434 0.75rem, #343434 0.9375rem, #d98413 0.9375rem, #d98413 1rem, #343434 1rem, #343434 1.1875rem, #d98413 1.1875rem, #d98413 1.25rem, #343434 1.25rem, #343434 1.4375rem, #d98413 1.4375rem, #d98413 1.5rem, #343434 1.5rem);
+  background: linear-gradient(#343434 0%, #343434 0.1875rem, #d98413 0.1875rem, #d98413 0.25rem, #343434 0.25rem, #343434 0.4375rem, #d98413 0.4375rem, #d98413 0.5rem, #343434 0.5rem, #343434 0.6875rem, #d98413 0.6875rem, #d98413 0.75rem, #343434 0.75rem, #343434 0.9375rem, #d98413 0.9375rem, #d98413 1rem, #343434 1rem, #343434 1.1875rem, #d98413 1.1875rem, #d98413 1.25rem, #343434 1.25rem, #343434 1.4375rem, #d98413 1.4375rem, #d98413 1.5rem, #343434 1.5rem);
+  opacity: 0;
+  -webkit-transition: opacity 150ms;
+  transition: opacity 150ms; }
+  .Stargate-chevron.is-active .Stargate-chevronHookActive {
+    opacity: 1; }
+  .Stargate-chevron.is-open .Stargate-chevronHookActive {
+    -webkit-transform: translateX(-50%) translateY(0.5rem);
+            transform: translateX(-50%) translateY(0.5rem); }
+
+.Stargate-chevronLight {
+  position: absolute;
+  top: -.1rem;
+  left: 50%;
+  width: 2.26rem;
+  height: 2.78rem;
+  -webkit-clip-path: polygon(2% 0%, 98% 0%, 65% 100%, 35% 100%);
+          clip-path: polygon(2% 0%, 98% 0%, 65% 100%, 35% 100%);
+  background-color: #343434;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms; }
+  .Stargate-chevronLight::before, .Stargate-chevronLight::after {
+    position: absolute;
+    top: -.05rem;
+    left: 50%;
+    width: 1.8rem;
+    height: 2.3rem;
+    -webkit-clip-path: polygon(2% 0%, 98% 0%, 63% 100%, 37% 100%);
+            clip-path: polygon(2% 0%, 98% 0%, 63% 100%, 37% 100%);
+    background-color: #4e423e;
+    content: "";
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: background 500ms;
+    transition: background 500ms; }
+  .Stargate-chevronLight::after {
+    background: -webkit-linear-gradient(#d98413 0%, #c27611 100%);
+    background: linear-gradient(#d98413 0%, #c27611 100%);
+    opacity: 0;
+    -webkit-transition: 150ms;
+    transition: 150ms; }
+  .Stargate-chevron.is-active .Stargate-chevronLight::after {
+    opacity: 1; }
+  .Stargate-chevron.is-open .Stargate-chevronLight {
+    -webkit-transform: translateX(-50%) translateY(-0.5rem);
+            transform: translateX(-50%) translateY(-0.5rem); }
 
 .Stargate-innerRing {
   width: 33.3rem;
@@ -4879,11 +4939,10 @@ body > * {
   width: 33.3rem;
   height: 33.3rem;
   overflow: hidden;
-  background-color: #33f;
   border-radius: 50%;
   opacity: 0;
-  -webkit-transition: opacity 1000ms;
-  transition: opacity 1000ms; }
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms; }
   .Stargate-horizon.is-active {
     opacity: 1; }
 
@@ -4921,5 +4980,9 @@ body > * {
 .Stargate-button--stop {
   top: 7vh;
   background-color: #b00; }
+
+.Stargate-button--toggleChevrons {
+  top: 13vh;
+  background-color: #008; }
 
 /* @import "components/dhd.css"; */
