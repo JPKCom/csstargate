@@ -4855,10 +4855,10 @@ body > * {
   background: linear-gradient(#343434 0%, #343434 0.1875rem, #4e423e 0.1875rem, #4e423e 0.25rem, #343434 0.25rem, #343434 0.4375rem, #4e423e 0.4375rem, #4e423e 0.5rem, #343434 0.5rem, #343434 0.6875rem, #4e423e 0.6875rem, #4e423e 0.75rem, #343434 0.75rem, #343434 0.9375rem, #4e423e 0.9375rem, #4e423e 1rem, #343434 1rem, #343434 1.1875rem, #4e423e 1.1875rem, #4e423e 1.25rem, #343434 1.25rem, #343434 1.4375rem, #4e423e 1.4375rem, #4e423e 1.5rem, #343434 1.5rem);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  -webkit-transition: -webkit-transform 600ms;
-  transition: -webkit-transform 600ms;
-  transition: transform 600ms;
-  transition: transform 600ms, -webkit-transform 600ms; }
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms; }
   .Stargate-chevronHook::before, .Stargate-chevronHookActive::before {
     position: absolute;
     bottom: 0;
@@ -4898,10 +4898,10 @@ body > * {
   background-color: #343434;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  -webkit-transition: -webkit-transform 600ms;
-  transition: -webkit-transform 600ms;
-  transition: transform 600ms;
-  transition: transform 600ms, -webkit-transform 600ms; }
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms; }
   .Stargate-chevronLight::before, .Stargate-chevronLight::after {
     position: absolute;
     top: -.05rem;

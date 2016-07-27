@@ -1276,7 +1276,7 @@ var Stargate = function (_HTMLElement) {
           address: [27, 7, 15, 32, 12, 30, 1],
           speed: 4000, // should pe same as css-transition '.Stargate-symboles'
           delay: 2000,
-          lockTime: 600,
+          lockTime: 700,
           currentIndex: 0,
           isRunning: false,
           hooks: [1, 2, 3, 6, 7, 8, 0],
@@ -1444,7 +1444,7 @@ var Stargate = function (_HTMLElement) {
         this.elements.chevrons[0].classList.add('is-open');
         setTimeout(function () {
           return _this5.elements.chevrons[0].classList.remove('is-open');
-        }, this.options.lockTime / 2);
+        }, this.options.lockTime - 200);
       }
 
       return lockChevron;
