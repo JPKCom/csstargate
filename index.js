@@ -1257,6 +1257,168 @@ if (typeof HTMLElement !== 'function') {
   HTMLElement = oHTMLElement;
 }
 
+var Dhd = function (_HTMLElement) {
+  (0, _inherits3['default'])(Dhd, _HTMLElement);
+
+  function Dhd() {
+    (0, _classCallCheck3['default'])(this, Dhd);
+    return (0, _possibleConstructorReturn3['default'])(this, (0, _getPrototypeOf2['default'])(Dhd).apply(this, arguments));
+  }
+
+  (0, _createClass3['default'])(Dhd, [{
+    key: 'createdCallback',
+    value: function () {
+      function createdCallback() {
+        var _this2 = this;
+
+        // default options
+        this.options = {
+          address: [],
+          selectors: {
+            symboles: '.Dhd-symboles',
+            symbole: '.Dhd-symbole',
+            submit: '.Dhd-submit',
+            reset: '.Dhd-reset'
+          }
+        };
+
+        this.elements = {};
+        (0, _keys2['default'])(this.options.selectors).forEach(function (key) {
+          _this2.elements[key] = _this2.querySelectorAll(_this2.options.selectors[key]);
+        });
+
+        this.elements.symbole[0].addEventListener('click', function () {
+          return _this2.setAttribute('data-address', (0, _stringify2['default'])([27, 7, 15, 32, 12, 30, 1]));
+        });
+
+        this.elements.submit[0].addEventListener('click', function () {
+          return _this2.processClickSubmit();
+        });
+
+        this.elements.reset[0].addEventListener('click', function () {
+          _this2.resetGate();
+          _this2.resetDhd();
+        });
+
+        this.elements.symbole.forEach(function (element) {
+          return element.addEventListener('click', function () {
+            return _this2.processClickSymbole(element);
+          });
+        });
+      }
+
+      return createdCallback;
+    }()
+  }, {
+    key: 'processClickSubmit',
+    value: function () {
+      function processClickSubmit() {
+        if (this.options.address.length === 6) {
+          this.options.address.push(1);
+          this.sendAdress(this.options.address);
+        }
+      }
+
+      return processClickSubmit;
+    }()
+  }, {
+    key: 'processClickSymbole',
+    value: function () {
+      function processClickSymbole(element) {
+        if (this.options.address.length < 6 && !element.classList.contains('is-active')) {
+          var chevron = element.getAttribute('data-chevron');
+          this.options.address.push(chevron);
+          element.classList.add('is-active');
+          // this.options.address.push(target.getAttribute('data-address'));
+        }
+      }
+
+      return processClickSymbole;
+    }()
+  }, {
+    key: 'resetGate',
+    value: function () {
+      function resetGate() {
+        document.querySelectorAll('.Stargate')[0].removeAttribute('data-address');
+      }
+
+      return resetGate;
+    }()
+  }, {
+    key: 'resetDhd',
+    value: function () {
+      function resetDhd() {
+        this.options.address = [];
+        this.elements.symbole.forEach(function (symbol) {
+          return symbol.classList.remove('is-active');
+        });
+      }
+
+      return resetDhd;
+    }()
+  }, {
+    key: 'sendAdress',
+    value: function () {
+      function sendAdress(address) {
+        // document.querySelectorAll('.data')[0].setAttribute('data-address', address);
+        document.querySelectorAll('.Stargate')[0].setAttribute('data-address', (0, _stringify2['default'])(address));
+      }
+
+      return sendAdress;
+    }()
+  }]);
+  return Dhd;
+}(HTMLElement);
+
+exports['default'] = document.registerElement('c-dhd', Dhd);
+
+},{"babel-runtime/core-js/json/stringify":1,"babel-runtime/core-js/object/get-prototype-of":4,"babel-runtime/core-js/object/keys":5,"babel-runtime/helpers/classCallCheck":9,"babel-runtime/helpers/createClass":10,"babel-runtime/helpers/inherits":11,"babel-runtime/helpers/possibleConstructorReturn":12}],94:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _stringify = require('babel-runtime/core-js/json/stringify');
+
+var _stringify2 = _interopRequireDefault(_stringify);
+
+var _keys = require('babel-runtime/core-js/object/keys');
+
+var _keys2 = _interopRequireDefault(_keys);
+
+var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = require('babel-runtime/helpers/createClass');
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = require('babel-runtime/helpers/possibleConstructorReturn');
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = require('babel-runtime/helpers/inherits');
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+if (typeof HTMLElement !== 'function') {
+  var oHTMLElement = function () {
+    function oHTMLElement() {}
+
+    return oHTMLElement;
+  }();
+  oHTMLElement.prototype = HTMLElement.prototype;
+  HTMLElement = oHTMLElement;
+}
+
 var Stargate = function (_HTMLElement) {
   (0, _inherits3['default'])(Stargate, _HTMLElement);
 
@@ -1475,14 +1637,16 @@ var Stargate = function (_HTMLElement) {
 
 exports['default'] = document.registerElement('c-stargate', Stargate);
 
-},{"babel-runtime/core-js/json/stringify":1,"babel-runtime/core-js/object/get-prototype-of":4,"babel-runtime/core-js/object/keys":5,"babel-runtime/helpers/classCallCheck":9,"babel-runtime/helpers/createClass":10,"babel-runtime/helpers/inherits":11,"babel-runtime/helpers/possibleConstructorReturn":12}],94:[function(require,module,exports){
+},{"babel-runtime/core-js/json/stringify":1,"babel-runtime/core-js/object/get-prototype-of":4,"babel-runtime/core-js/object/keys":5,"babel-runtime/helpers/classCallCheck":9,"babel-runtime/helpers/createClass":10,"babel-runtime/helpers/inherits":11,"babel-runtime/helpers/possibleConstructorReturn":12}],95:[function(require,module,exports){
 'use strict';
 
 require('document-register-element');
 
 require('./components/stargate/stargate.js');
 
-},{"./components/stargate/stargate.js":93,"document-register-element":92}]},{},[94])
+require('./components/dhd/dhd.js');
+
+},{"./components/dhd/dhd.js":93,"./components/stargate/stargate.js":94,"document-register-element":92}]},{},[95])
 
 
 //# sourceMappingURL=index.js.map
