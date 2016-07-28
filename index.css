@@ -5033,12 +5033,15 @@ body > * {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #333;
+  color: #666;
   cursor: pointer;
   background-color: #444;
   border-radius: 50%; }
+  .Dhd-symbole:hover {
+    background-color: #515151; }
   .Dhd-symbole.is-active {
-    color: #d98413; }
+    color: #d98413;
+    background-color: #515151; }
 
 .Dhd-symbole--outer {
   width: 17.5rem;
@@ -5138,7 +5141,7 @@ body > * {
   font-size: 1.4rem; }
 
 .Dhd-symbole--inner .Dhd-svg {
-  font-size: 1.1rem; }
+  font-size: 1rem; }
 
 .Dhd-submit {
   width: 5.24rem;
@@ -5146,7 +5149,11 @@ body > * {
   cursor: pointer;
   background-color: #4e423e;
   border-radius: 50%;
-  box-shadow: 0 0 0 0.5rem #333; }
+  box-shadow: 0 0 0 0.5rem #333;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms; }
+  .Dhd-submit.is-active {
+    background-color: #a32714; }
 
 .Dhd-reset {
   position: absolute;

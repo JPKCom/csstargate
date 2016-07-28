@@ -1287,10 +1287,6 @@ var Dhd = function (_HTMLElement) {
           _this2.elements[key] = _this2.querySelectorAll(_this2.options.selectors[key]);
         });
 
-        this.elements.symbole[0].addEventListener('click', function () {
-          return _this2.setAttribute('data-address', (0, _stringify2['default'])([27, 7, 15, 32, 12, 30, 1]));
-        });
-
         this.elements.submit[0].addEventListener('click', function () {
           return _this2.processClickSubmit();
         });
@@ -1328,8 +1324,9 @@ var Dhd = function (_HTMLElement) {
         if (this.options.address.length < 6 && !element.classList.contains('is-active')) {
           var chevron = element.getAttribute('data-chevron');
           this.options.address.push(chevron);
+          this.setOption('address', this.options.address);
+          this.setOption('address', this.options.address);
           element.classList.add('is-active');
-          // this.options.address.push(target.getAttribute('data-address'));
         }
       }
 
@@ -1352,6 +1349,7 @@ var Dhd = function (_HTMLElement) {
         this.elements.symbole.forEach(function (symbol) {
           return symbol.classList.remove('is-active');
         });
+        this.elements.submit[0].classList.remove('is-active');
       }
 
       return resetDhd;
@@ -1360,11 +1358,29 @@ var Dhd = function (_HTMLElement) {
     key: 'sendAdress',
     value: function () {
       function sendAdress(address) {
-        // document.querySelectorAll('.data')[0].setAttribute('data-address', address);
         document.querySelectorAll('.Stargate')[0].setAttribute('data-address', (0, _stringify2['default'])(address));
       }
 
       return sendAdress;
+    }()
+  }, {
+    key: 'setOption',
+    value: function () {
+      function setOption(key, value) {
+        switch (key) {
+          case 'address':
+            this.options[key] = value;
+            if (value.length === 6) {
+              this.elements.submit[0].classList.add('is-active');
+            }
+            break;
+          default:
+            this.options[key] = value;
+            break;
+        }
+      }
+
+      return setOption;
     }()
   }]);
   return Dhd;
@@ -1378,10 +1394,6 @@ exports['default'] = document.registerElement('c-dhd', Dhd);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-var _stringify = require('babel-runtime/core-js/json/stringify');
-
-var _stringify2 = _interopRequireDefault(_stringify);
 
 var _keys = require('babel-runtime/core-js/object/keys');
 
@@ -1458,17 +1470,6 @@ var Stargate = function (_HTMLElement) {
         (0, _keys2['default'])(this.options.selectors).forEach(function (key) {
           _this2.elements[key] = _this2.querySelectorAll(_this2.options.selectors[key]);
         });
-
-        // TODO: remove when dhd is ready
-        this.elements.buttonGo[0].addEventListener('click', function () {
-          return _this2.setAttribute('data-address', (0, _stringify2['default'])([27, 7, 15, 32, 12, 30, 1]));
-        });
-        this.elements.buttonStop[0].addEventListener('click', function () {
-          return _this2.removeAttribute('data-address');
-        });
-        this.elements.buttonTC[0].addEventListener('click', function () {
-          return _this2.toggleChevrons();
-        });
       }
 
       return createdCallback;
@@ -1500,6 +1501,10 @@ var Stargate = function (_HTMLElement) {
         this.elements.chevrons.forEach(function (element) {
           return element.classList.remove('is-active');
         });
+        clearTimeout(this.timerSpeed);
+        clearTimeout(this.timerHook);
+        clearTimeout(this.timerLockTime);
+        clearTimeout(this.timerAktivateChevron);
       }
 
       return resetGate;
@@ -1572,11 +1577,11 @@ var Stargate = function (_HTMLElement) {
         console.log('Rotating to ' + chevron);
         this.elements.symboles[0].style.transform = 'rotate(' + 360 / 39 * (chevron - 1) * -1 + 'deg)';
 
-        setTimeout(function () {
+        this.timerSpeed = setTimeout(function () {
           return _this3.activateHook(_this3.options.hooks[index]);
         }, this.options.speed);
 
-        setTimeout(function () {
+        this.timerAktivateChevron = setTimeout(function () {
           return _this3.rotate().next(_this3, _this3.options.currentIndex, _this3.options.address);
         }, this.options.speed + this.options.delay);
       }
@@ -1590,7 +1595,7 @@ var Stargate = function (_HTMLElement) {
         var _this4 = this;
 
         this.lockChevron();
-        setTimeout(function () {
+        this.timerLockTime = setTimeout(function () {
           return _this4.elements.chevrons[index].classList.add('is-active');
         }, this.options.lockTime);
       }
@@ -1604,23 +1609,12 @@ var Stargate = function (_HTMLElement) {
         var _this5 = this;
 
         this.elements.chevrons[0].classList.add('is-open');
-        setTimeout(function () {
+        this.timerHook = setTimeout(function () {
           return _this5.elements.chevrons[0].classList.remove('is-open');
         }, this.options.lockTime - 200);
       }
 
       return lockChevron;
-    }()
-  }, {
-    key: 'toggleChevrons',
-    value: function () {
-      function toggleChevrons() {
-        this.elements.chevrons.forEach(function (element) {
-          return element.classList.toggle('is-active');
-        });
-      }
-
-      return toggleChevrons;
     }()
   }], [{
     key: 'observedAttributes',
@@ -1637,7 +1631,7 @@ var Stargate = function (_HTMLElement) {
 
 exports['default'] = document.registerElement('c-stargate', Stargate);
 
-},{"babel-runtime/core-js/json/stringify":1,"babel-runtime/core-js/object/get-prototype-of":4,"babel-runtime/core-js/object/keys":5,"babel-runtime/helpers/classCallCheck":9,"babel-runtime/helpers/createClass":10,"babel-runtime/helpers/inherits":11,"babel-runtime/helpers/possibleConstructorReturn":12}],95:[function(require,module,exports){
+},{"babel-runtime/core-js/object/get-prototype-of":4,"babel-runtime/core-js/object/keys":5,"babel-runtime/helpers/classCallCheck":9,"babel-runtime/helpers/createClass":10,"babel-runtime/helpers/inherits":11,"babel-runtime/helpers/possibleConstructorReturn":12}],95:[function(require,module,exports){
 'use strict';
 
 require('document-register-element');
