@@ -1470,6 +1470,8 @@ var Stargate = function (_HTMLElement) {
         (0, _keys2['default'])(this.options.selectors).forEach(function (key) {
           _this2.elements[key] = _this2.querySelectorAll(_this2.options.selectors[key]);
         });
+
+        this.calcFontSize();
       }
 
       return createdCallback;
@@ -1615,6 +1617,31 @@ var Stargate = function (_HTMLElement) {
       }
 
       return lockChevron;
+    }()
+  }, {
+    key: 'calcFontSize',
+    value: function () {
+      function calcFontSize() {
+        var html = document.querySelector('html');
+        var windowHeight = window.innerHeight;
+        var rootFontSizePX = window.getComputedStyle(html, null).getPropertyValue('font-size');
+        var rootFontSize = parseInt(rootFontSizePX, 10);
+        var stargateHeight = rootFontSize * 46;
+
+        while (windowHeight >= stargateHeight) {
+          rootFontSize = rootFontSize + 2;
+          stargateHeight = rootFontSize * 46;
+        }
+
+        while (windowHeight <= stargateHeight) {
+          rootFontSize = rootFontSize - 2;
+          stargateHeight = rootFontSize * 46;
+        }
+
+        html.style.fontSize = rootFontSize + 'px';
+      }
+
+      return calcFontSize;
     }()
   }], [{
     key: 'observedAttributes',
