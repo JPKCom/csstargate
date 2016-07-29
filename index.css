@@ -399,8 +399,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   background-color: #000; }
 
 body > * {
@@ -411,13 +410,14 @@ body > * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end; }
-
-.data::before {
-  content: attr(data-address);
-  color: #fff; }
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .Svg {
   width: 1em;
@@ -431,6 +431,7 @@ body > * {
   position: relative;
   width: 45rem;
   height: 45rem;
+  margin: 1rem;
   border-radius: 50%; }
 
 .Stargate-outerRing {
