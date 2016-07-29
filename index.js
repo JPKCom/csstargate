@@ -1622,23 +1622,25 @@ var Stargate = function (_HTMLElement) {
     key: 'calcFontSize',
     value: function () {
       function calcFontSize() {
-        var html = document.querySelector('html');
-        var windowHeight = window.innerHeight;
-        var rootFontSizePX = window.getComputedStyle(html, null).getPropertyValue('font-size');
-        var rootFontSize = parseInt(rootFontSizePX, 10);
-        var stargateHeight = rootFontSize * 46;
+        if (window.innerWidth >= 680) {
+          var html = document.querySelector('html');
+          var windowHeight = window.innerHeight;
+          var rootFontSizePX = window.getComputedStyle(html, null).getPropertyValue('font-size');
+          var rootFontSize = parseInt(rootFontSizePX, 10);
+          var stargateHeight = rootFontSize * 46;
 
-        while (windowHeight >= stargateHeight) {
-          rootFontSize = rootFontSize + 2;
-          stargateHeight = rootFontSize * 46;
+          while (windowHeight >= stargateHeight) {
+            rootFontSize = rootFontSize + 2;
+            stargateHeight = rootFontSize * 46;
+          }
+
+          while (windowHeight <= stargateHeight) {
+            rootFontSize = rootFontSize - 2;
+            stargateHeight = rootFontSize * 46;
+          }
+
+          html.style.fontSize = rootFontSize + 'px';
         }
-
-        while (windowHeight <= stargateHeight) {
-          rootFontSize = rootFontSize - 2;
-          stargateHeight = rootFontSize * 46;
-        }
-
-        html.style.fontSize = rootFontSize + 'px';
       }
 
       return calcFontSize;
